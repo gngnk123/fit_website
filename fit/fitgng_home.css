@@ -1,0 +1,492 @@
+body {
+
+  background-color: rgba(58, 61, 78, 0.418);
+  background-image: url("./images/matrix.jpg");
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.topnav input{
+  border: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+#search {
+  padding: 14px 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) , .topnav input[type=text]:not(:first-child) {
+    display: none;
+
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+
+  }
+
+  a.pointer {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+
+  .topnav.responsive a, .topnav.responsive input[type=text]  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  a.pointer {
+    margin-right: 0px;
+  }
+}
+
+/* Full-width input fields */
+#id01 input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.loginbutton,
+.cancelbtn {
+  background-color: rgb(64, 160, 0);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+.loginbutton:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+span.crtac {
+  float: right;
+  padding-left: 30px;
+  padding-top: 16px;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+
+}
+
+a.pointer {
+  float: right;
+  margin-right: 40px;
+  background-color: red;
+}
+
+
+.oneday {
+  overflow: auto;
+  margin-top: 90px;
+  width: min-content;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+.priceBox1 {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  margin: 20px;
+  color: rgb(115 135 9);
+  ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 1px solid #738f16;
+  text-align: center;
+  background-image: url('./images/hulk.png');
+  background-position: initial;
+  background-size: cover;
+  background-color: #242424;
+  opacity: 80%;
+
+
+}
+
+
+
+
+
+.priceBox1:hover {
+  opacity: 100%;
+
+}
+
+.priceBox1 h1 {
+  opacity: 100%;
+}
+
+
+.priceBox1_u {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  margin: 20px;
+  color: rgb(115 135 9);
+  ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(./images/hulk.png);
+  background-position: initial;
+  background-size: cover;
+  border: 1px solid #738f16;
+  text-align: center;
+  background-color: #242424;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 340px) {
+  .oneday, .priceBox1, .priceBox1_u {
+    margin: 0px;
+    margin-top: 10px;
+  }
+}
+
+.priceBox1_u:hover {
+  opacity: 100%;
+}
+
+.form #userhey {
+  background-color: white;
+}
+
+.oneday_t {
+  opacity: 100%;
+}
+
+#pricebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: 1100px) {
+  #pricebox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  #pricebox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+}
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.imagenews{
+  height: 300px;
+  background-color: #04AA6D;
+}
+
+.newsfeed{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: fit-content;
+  margin-left: 20px;
+
+}
+
+.title_home1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.newsfeed :hover {
+  background-color: #777;
+}
+
+#weight p {
+  color: white;
+}
+
+.phone{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #38a000;
+  text-align: center;
+}
+
+#isani{
+  margin-top: 40px;
+  background-color: white;
+  border-style: solid;
+  border-color: #70a000d3;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+#sarajishvili{
+  margin-top: 40px;
+  background-color: white;
+  border-style: solid;
+  border-color: #70a000d3;
+  display: block;
+  float: right;
+  margin-left: 20px;
+}
+#isani_a{
+  color: #70a000d3;
+  text-align: center;
+}
+
+#sarajishvili_a{
+  color: #70a000d3;
+  text-align: center;
+}
+
+#contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1345px){
+  #contacts{
+    display: flex;
+    flex-wrap: wrap
+  }
+}
+@media screen and (max-width: 625px){
+#contacts{
+  display: none;
+}
+}
+
+
+/* footer */
+
+
+.fa-instagram {
+  background: #e7e7e7;
+  color: rgb(221, 79, 79);
+  display: inline-block;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  display: inline-block;
+}
+.fa-instagram,.fa-facebook {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+
+
+footer{
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+
+
+}
+
+
+
+
